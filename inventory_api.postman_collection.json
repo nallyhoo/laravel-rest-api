@@ -1,0 +1,96 @@
+{
+    "info": {
+        "_postman_id": "inventory-api-coll",
+        "name": "Project Inventory API",
+        "description": "Collection for testing the Project and Product management API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Projects",
+            "item": [
+                {
+                    "name": "List Projects",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/projects"
+                        }
+                    }
+                },
+                {
+                    "name": "Create Project",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"New Expansion\",\n    \"description\": \"Description here\"\n}"
+                        },
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/projects"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Products",
+            "item": [
+                {
+                    "name": "List Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/products"
+                        }
+                    }
+                },
+                {
+                    "name": "Create Product",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Steel Beam\",\n    \"sku\": \"SB-X1\",\n    \"price\": 100,\n    \"stock\": 10,\n    \"project_id\": 1\n}"
+                        },
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/products"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
