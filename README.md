@@ -98,6 +98,5 @@ For deep dives into the implementation, check out our tutorial series in the roo
 
 ## 👨‍💻 Author
 
-**NallyHoo** - *Lead Developer*
+**NallyHoo** - *Maow Developer*
 
-*Developed with the assistance of Antigravity AI.*
